@@ -1,0 +1,15 @@
+percent-with-the: Compute the percentage of sentences that contain the world “the” at least once.
+punctuation-pct: Compute the percentage of words that are punctuation. The parameter should be a list of sentences by an author.
+stopwords-pct: Compute the percentage of words that are stopwords.
+words-pct: Compute the percentage of words that are neither stopwords, nor punctuation.
+common-words: Compute the 10 most common words that are not stopwords and are not punctuation. Hint: Use the frequencies and sort-by functions.
+common-words-n: Compute the N most common words that are neither stopwords nor punctuation. This should work for an individual author but will only work for the authors variable if you create a partial (which is interesting but not necessary; feel free to run on each author individually).
+most-common-pairs: Compute the 10 most common pairs of words that occur next to each other, for each author. These are usually called bigrams. So if an author wrote the sentence “The dog eats food”, the bigrams would be “The dog”, “dog eats”, and “eats food”. Hint: Use the partition function to build the bigrams and then put them into a hash! If you combine partition with mapcat and frequencies, this problem is much easier than it seems. (You could also use the for function and repeatedly use subvec, but partition is much easier)
+k-most-common-ngrams: Compute the K most common ngrams. An ngram is a sequence of N words (where N is a parameter to the function) that occur consecutively for each author. This is a slight generalization of the previous question, where we used pairs of words (bigrams, or ngrams where N=2) and K was always 10.
+Come up with your own question, and then ask and answer your question from this data set.
+Some ideas:
+    Most common n-grams to start a sentence, and what that means
+    Most common ways to end a sentence
+    Try to figure out candidates to be added to the list of stopwords (i.e. words that are very common across all authors but are probably not actually “interesting words)
+
+
